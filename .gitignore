@@ -36,5 +36,13 @@ cmake_install.cmake
 install_manifest.txt
 CMakeCache.txt
 
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
 ### Project Files ###
 derby_drill_database
