@@ -11,7 +11,6 @@ set(DRILL_SOURCES
     main/main.cpp)
 
 # Google Test
-include_directories("lib/gtest/include")
 add_executable(derby_drill_database
-	       ${DRILL_SOURCES})
-
+	       ${DRILL_SOURCES}
+	       )

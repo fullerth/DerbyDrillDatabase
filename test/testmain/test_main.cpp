@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 
-int main() {
-	return 0;
+TEST(sample_test_case, sample_test)
+{
+	EXPECT_EQ(1, 1);
 }
