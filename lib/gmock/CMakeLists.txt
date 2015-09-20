@@ -48,7 +48,6 @@ endif()
 # targets to the current scope.  We are placing Google Test's binary
 # directory in a subdirectory of our own as VC compilation may break
 # if they are the same (the default).
-message("${gtest_dir}" "$(gmock_BINARY_DIR}/gtest")
 add_subdirectory("${gtest_dir}" "${gmock_BINARY_DIR}/gtest")
 
 # Although Google Test's CMakeLists.txt calls this function, the
