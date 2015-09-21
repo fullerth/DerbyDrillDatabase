@@ -7,10 +7,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_subdirectory(lib/gmock)
 add_subdirectory(main)
 add_subdirectory(test/testmain)
+
+#DERBY DRILL DATABASE
 set(DRILL_SOURCES
     main/main.cpp)
 
-# Google Test
 add_executable(derby_drill_database
 	       ${DRILL_SOURCES}
 	       )
