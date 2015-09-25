@@ -7,6 +7,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_subdirectory(lib/gmock)
 add_subdirectory(main)
 add_subdirectory(test/testmain)
+add_subdirectory(foolib)
 
 #DERBY DRILL DATABASE
 set(DRILL_SOURCES
