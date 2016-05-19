@@ -10,4 +10,4 @@ target_link_libraries(testmain
 
 include_directories(../../lib/gtest/include)
 
-install(TARGETS testmain DESTINATION bin)
+install(TARGETS testmain)
