@@ -13,12 +13,12 @@ set(TEST_EXE_PATH /home/pthrill/Projects/GmockSetup/build/test/)
 ## Directories to add to build
 add_subdirectory(lib/gmock)
 
-add_subdirectory(main)
+add_subdirectory(src/main)
 add_subdirectory(test/testmain)
 add_test(NAME AllTestsInMain
     COMMAND ${TEST_EXE_PATH}testmain/testmain)
 
-add_subdirectory(foolib)
+add_subdirectory(src/foolib)
 add_subdirectory(test/testfoo)
 add_test(NAME AllTestsInFoo
     COMMAND ${TEST_EXE_PATH}testfoo/testfoo)
@@ -26,10 +26,10 @@ add_test(NAME AllTestsInFoo
 
 # Project Source
 set(MAIN_SOURCES
-    main/main.cpp
-    foolib/foo.cpp)
+    src/main/main.cpp
+    src/foolib/foo.cpp)
 include_directories(
-    foolib/include)
+    src/foolib/include)
 
 add_executable(GmockSetup
     ${MAIN_SOURCES}

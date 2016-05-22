@@ -1,7 +1,7 @@
 set(TEST_SOURCES
     main.cpp
     test_foo.cpp
-    ../../foolib/foo.cpp)
+    ../../src/foolib/foo.cpp)
 
 add_executable(testfoo ${TEST_SOURCES})
 
@@ -11,6 +11,6 @@ target_link_libraries(testfoo
 
 include_directories(
     ../../lib/gtest/include
-    ../../foolib/include
+    ../../src/foolib/include
     )
 
