@@ -9,7 +9,6 @@ add_definitions(-Werror)
 include(CTest)
 
 set(TEST_EXE_PATH ./test/)
-#set(TEST_EXE_PATH /home/pthrill/Projects/GmockSetup/build/test/)
 
 ## Directories to add to build
 add_subdirectory(lib/gmock)
